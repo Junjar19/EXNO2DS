@@ -85,10 +85,6 @@ df
 ![Screenshot 2024-09-10 193247](https://github.com/user-attachments/assets/3d3614e7-1832-4802-8fca-d70a86df9369)
 
 ```
-sns.catplot(x="Gender",col="Survived",kind="count",data=df,height=5,aspect=.7)
-```
-![Screenshot 2024-09-10 193339](https://github.com/user-attachments/assets/c8b44162-3a88-431b-b21f-29b467e3ecbc)
-```
 sns.catplot(x="Survived",hue="Gender",data=df,kind="count")
 ```
 ![Screenshot 2024-09-10 193448](https://github.com/user-attachments/assets/3abf2cac-ad2d-416d-8fa4-b6323a2b08fd)
@@ -100,10 +96,7 @@ df.boxplot(column="Age",by="Survived")
 sns.scatterplot(x=df["Age"],y=df["Fare"])
 ```
 ![Screenshot 2024-09-10 193633](https://github.com/user-attachments/assets/be003743-cb0f-40df-b419-167c37da8b0e)
-```
-sns.jointplot(x="Age",y="Fare",data=df)
-```
-![Screenshot 2024-09-10 193736](https://github.com/user-attachments/assets/9bc1238d-accf-4719-b6bc-f0d22508491e)
+
 
 ```
 fig, ax1 = plt.subplots(figsize=(8,5))
